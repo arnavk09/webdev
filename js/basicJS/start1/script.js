@@ -1,3 +1,4 @@
+'use strict';
 var mass1, height1, mass2, height2;
 mass1 = 78;
 mass2 = 92;
