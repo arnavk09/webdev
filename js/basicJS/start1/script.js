@@ -18,7 +18,7 @@
 // calcAge = (age) => {
 //   return 2021 - age;
 // };
-
+//functions practice
 var BMICalculator = () => {
   var mass1, height1, mass2, height2;
   mass1 = 78;
@@ -37,6 +37,7 @@ var BMICalculator = () => {
 };
 BMICalculator();
 
+//object + array practice
 const Arnav = {
   FirstName: "Arnav",
   LastName: "Katgeri",
@@ -44,13 +45,27 @@ const Arnav = {
   job: "student",
   friends: ["A", "B", "C", "D"],
 };
+Arnav.location = "Pune";
+Arnav["github"] = "arnavk09";
 console.log(Arnav);
+
 const nameKey = "Name";
 console.log(Arnav["First" + nameKey]);
 console.log(Arnav["Last" + nameKey]);
-console.log(Arnav.friends);
+
+console.log(Arnav.friends); //DOT notation
+console.log(Arnav["github"]); //BRACKET notation
+
 if (Arnav.friends.length >= 3) {
   console.log(`You have quite a few friends, that is ${Arnav.friends.length}`);
 } else {
-  console.log(`Make some more lmao, all you have are ${Arnav.friends.length} friends`);
+  console.log(
+    `Make some more lmao, all you have are ${Arnav.friends.length} friends`
+  );
 }
+// console.log(
+//   `Arnav has ${Arnav.friends.length} friends and his best friend is ${Arnav.friends[0]}. His GitHub Link is ${Arnav["github"]} and he lives in ${Arnav.location}`
+// );
+alert(
+  `${Arnav["FirstName"]} has ${Arnav.friends.length} friends and his best friend is ${Arnav.friends[0]}. His GitHub Link is ${Arnav["github"]} and he lives in ${Arnav.location}`
+);
