@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RESTful</title>
+  </head>
+  <body>
+    <div class="mainbody">
+      <h1 align="center">REST demo</h1>
+      <h2>GET request</h2>
+      <form action="http://localhost:5000/tacos" method="get">
+        <input type="text" name="meat" placeholder="enter filling" />
+        <br />
+        <br />
+        <input type="number" name="qty" placeholder="enter quantity" />
+        <br />
+        <br />
+        <button>Enter Values</button>
+      </form>
+      <h2>POST request</h2>
+      <form action="http://localhost:5000/tacos" method="post">
+        <input type="text" name="meat" placeholder="enter filling" />
+        <br />
+        <br />
+        <input type="number" name="qty" placeholder="enter quantity" />
+        <br />
+        <br />
+        <button>Enter Values</button>
+      </form>
+    </div>
+  </body>
+</html>

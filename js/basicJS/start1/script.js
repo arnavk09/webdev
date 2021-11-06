@@ -63,9 +63,21 @@ if (Arnav.friends.length >= 3) {
     `Make some more lmao, all you have are ${Arnav.friends.length} friends`
   );
 }
-// console.log(
-//   `Arnav has ${Arnav.friends.length} friends and his best friend is ${Arnav.friends[0]}. His GitHub Link is ${Arnav["github"]} and he lives in ${Arnav.location}`
-// );
-alert(
-  `${Arnav["FirstName"]} has ${Arnav.friends.length} friends and his best friend is ${Arnav.friends[0]}. His GitHub Link is ${Arnav["github"]} and he lives in ${Arnav.location}`
+console.log(
+  `${Arnav["FirstName"]} has ${Arnav.friends.length} friends and his best friend is ${Arnav.friends[0]}. His GitHub profile is ${Arnav["github"]} and he lives in ${Arnav.location}`
 );
+var rep;
+for (rep = 1; rep <= 10; rep++) {
+  console.log(`We're on Repetition ${rep}`);
+}
+var sum = 0;
+for (var x = 1; x <= 10; x++) {
+  sum = sum + x;
+}
+console.log(sum);
+
+var friends = ["A", "B", "C", "D"];
+
+for (let i = 0; i < friends.length; i++) {
+  console.log(friends[i]);
+}
