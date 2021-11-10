@@ -1,17 +1,12 @@
 #!/usr/bin/env node
-
 "use strict";
-
 const boxen = require("boxen");
 const chalk = require("chalk");
 const inquirer = require("inquirer");
 const clear = require("clear");
 const open = require("open");
-
 clear();
-
 const prompt = inquirer.createPromptModule();
-
 const questions = [
   {
     type: "list",
@@ -19,10 +14,13 @@ const questions = [
     message: "What do you want to do?",
     choices: [
       {
+        // Use chalk to style headers
         name: `Shoot an ${chalk.bold("email")}?`,
         value: () => {
           open("mailto:akatgeri45@gmail.com");
-          console.log("\nLooking forward to getting a message from you\n");
+          console.log(
+            "\nLooking forward to hearing your message and replying to you!\n"
+          );
         },
       },
       {
@@ -34,39 +32,40 @@ const questions = [
     ],
   },
 ];
-
 const data = {
   name: chalk.bold.green("                     Arnav Katgeri"),
   handle: chalk.white("@arnavk09"),
-  fact: chalk.hex("#B10000")("I am a wannabe full stack dev"),
+  fact: chalk.hex("#B10000")("WebDev in the making"),
+  twitter: chalk.hex("#00A1D9")("Private"),
   github: chalk.hex("#787878")("https://github.com/arnavk09"),
+  website: chalk.hex("#00AB9E")("https://arnavk09.github.io/personalSite/"),
   npx: chalk.hex("#A1AB00")("npx arnavk09"),
 
   labelFact: chalk.hex("#FF6262").bold("          Fun Fact:"),
+  labelTwitter: chalk.hex("#629DFF").bold("        Twitter:"),
   labelGitHub: chalk.hex("#9E9E9E").bold("         GitHub:"),
+  labelWebsite: chalk.hex("#59FFC8").bold("        Website:"),
   labelCard: chalk.hex("#FFF976").bold("                  Card:"),
 };
-
-const me = boxen(
+const x = boxen(
   [
     `${data.name}`,
     ``,
     `${data.labelFact}  ${data.fact}`,
     ``,
-    `${data.labelTwitter}  ${data.twitter}`,
     `${data.labelGitHub}  ${data.github}`,
-    `${data.labelSteam}  ${data.steam}`,
-    `${data.labelDiscord}  ${data.discord}`,
     `${data.labelWebsite}  ${data.website}`,
     ``,
     `${data.labelCard}  ${data.npx}`,
     ``,
     `${chalk.bold(
-      "Hey there, I'm Arnav, a WebDev in the making. I'm also a Computer Science student :) "
+      "Hey, I'm Arnav Katgeri, an Indian Web Developer in the making! "
     )}`,
-    `${chalk.bold("I develop stuff when I'm not busy lazing around.")}`,
-    `${chalk.bold("I like dogs. ")}`,
-    `${chalk.bold("Toss me an email if you'd like to know about me")}`,
+    `${chalk.bold(
+      "I develop stuff when I'm not busy reversing a linked list or doing math."
+    )}`,
+    `${chalk.bold("I like pizza and videogames, sometimes at the same time")}`,
+    `${chalk.bold("Shoot me an email if you want to know more")}`,
   ].join("\n"),
   {
     margin: 1,
@@ -77,7 +76,7 @@ const me = boxen(
   }
 );
 
-console.log(me);
+console.log(x);
 const tip = [
   `Tip: ${chalk.cyanBright.bold(
     "cmd/ctrl + click"
@@ -85,5 +84,4 @@ const tip = [
   "",
 ].join("\n");
 console.log(tip);
-
 prompt(questions).then((answer) => answer.action());
