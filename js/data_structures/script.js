@@ -25,12 +25,18 @@ const restaurant = {
     },
   },
 };
-const {
-  name: restaurantName,
-  openingHours: hrs,
-  categories: catz,
-} = restaurant;
-console.log(restaurantName, hrs, catz);
+// const {
+//   name: restaurantName,
+//   openingHours: hrs,
+//   categories: catz,
+// } = restaurant;
+// console.log(restaurantName, hrs, catz);
+const{
+name:resName,
+starterMenu:sm,
+categories:term,
+}=restaurant;
+console.log(sm,term,resName);
 
 
 
