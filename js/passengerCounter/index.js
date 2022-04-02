@@ -1,7 +1,6 @@
-function incrementButton() {
-  var element = document.getElementById("incrementText");
-  var value = element.innerText;
-  ++value;
-  console.log(value);
-  document.getElementById("incrementText").innerHTML = value;
-}
+var count = 0;
+var incrementButton = () => {
+  count = count + 1;
+  console.log(count);
+  return count;
+};
