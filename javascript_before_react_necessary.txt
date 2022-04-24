@@ -1,0 +1,25 @@
+Var ✅
+Let ✅
+Const ✅
+Primitive datatypes ✅
+String methods ✅
+Loops  ✅
+Conditionals ✅
+Functions ✅
+Functions vs Arrow functions ✅
+Arrow functions ✅
+map() ✅
+For each array ✅
+
+Lexical this in Arrow functions (PENDING)
+Events (PENDING)
+Handling events (PENDING)
+Normal Function (PENDING)
+Named imports (PENDING)
+Default imports (PENDING)
+Asynchronous nature of JavaScript (VVIMP PENDING)
+Call back (PENDING)
+Promises (PENDING)
+async/await (PENDING)
+Filter() (PRACTICE/PENDING)
+Reduce() (PRACTICE/PENDING)
